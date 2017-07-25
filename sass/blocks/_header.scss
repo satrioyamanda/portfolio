@@ -84,3 +84,16 @@
 .current {
   font-weight: bold;
 }
+
+.social-button {
+  text-align: right;
+  & ul {
+    list-style: none;
+  }
+  & li {
+    display: inline-block;
+  }
+  & a {
+    padding: 0.67em 0 0.67em 0.67em;
+  }
+}
