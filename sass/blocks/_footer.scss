@@ -1,0 +1,21 @@
+.site-footer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.copyright-info {
+  font-size: 0.67em;
+  color: lighten($color-dark,20%);
+}
+
+.footer-deco {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  bottom: 0; right: 0;
+  background-image: url('../res/img/logo.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 130%;
+  background-size: 300px;
+  opacity: 0.05;
+}

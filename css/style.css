@@ -1,0 +1,458 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Merriweather", "Georgia", serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: #05f;
+  color: #fff;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+  font-family: "Pier Sans", "Arial", sans-serif;
+  line-height: 1.5;
+}
+
+h1, .h1 {
+  font-size: 3.33em;
+}
+
+h2, .h2 {
+  font-size: 2.22em;
+}
+
+h3, .h3 {
+  font-size: 1.5em;
+}
+
+h4, .h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Merriweather", "Georgia", serif;
+  line-height: 1.5;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #05f;
+}
+
+.has-underline {
+  border-bottom: 0.22rem solid #05f;
+}
+
+.container {
+  position: relative;
+  max-width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.container-full {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.line {
+  position: relative;
+  margin-left: -12px;
+  margin-right: -12px;
+  zoom: 1;
+}
+.line:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.unit, .unit-full, .unit-half, .unit-1of3, .unit-2of3, .unit-1of4, .unit-3of4, .unit-1of6 {
+  float: left;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.unit-full {
+  width: 100%;
+}
+
+.unit-half {
+  width: 50%;
+}
+
+.unit-1of3 {
+  width: 33.33333%;
+}
+
+.unit-2of3 {
+  width: 66.66667%;
+}
+
+.unit-1of4 {
+  width: 25%;
+}
+
+.unit-3of4 {
+  width: 75%;
+}
+
+.unit-1of6 {
+  width: 16.66667%;
+}
+
+@media screen and (min-width: 720px) {
+  .unit-full-t {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+  }
+
+  .unit-half-t {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 50%;
+  }
+
+  .unit-1of3-t {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33.33333%;
+  }
+
+  .unit-2of3-t {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 66.66667%;
+  }
+
+  .unit-1of4-t {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 25%;
+  }
+
+  .unit-3of4-t {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .unit-full-d {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+  }
+
+  .unit-half-d {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 50%;
+  }
+
+  .unit-1of3-d {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33.33333%;
+  }
+
+  .unit-2of3-d {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 66.66667%;
+  }
+
+  .unit-1of4-d {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 25%;
+  }
+
+  .unit-3of4-d {
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 75%;
+  }
+}
+.logo-front, .logo-inner {
+  width: 72px;
+  height: 64px;
+  margin-bottom: 0.67em;
+  background-image: url("../res/img/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1000px) {
+  .logo-front {
+    position: absolute;
+    top: 2.22em;
+    left: -1em;
+    z-index: 100;
+  }
+}
+
+.logo-inner {
+  display: inline-block;
+  margin-top: 2.22em;
+}
+
+.page-header {
+  background-color: #05f;
+  height: 61.8vh;
+}
+
+.nav-front li {
+  display: inline-block;
+}
+.nav-front a {
+  display: block;
+  padding: 0.44em 0.67em 0.44em 0;
+}
+@media screen and (min-width: 1000px) {
+  .nav-front {
+    position: absolute;
+    top: 2.22em;
+    right: 0;
+    z-index: 100;
+  }
+  .nav-front li {
+    display: block;
+  }
+  .nav-front a {
+    text-align: right;
+  }
+}
+
+.nav-inner {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 17.78em;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100;
+  transform: translateX(17.78em);
+  transition: transform 0.33s ease-out;
+}
+.nav-inner ul {
+  list-style: none;
+  margin-left: 0;
+  padding-top: 2.22em;
+}
+.nav-inner a {
+  display: block;
+  padding: 0.67em 0 0.67em 2.22em;
+}
+
+.nav-opened {
+  transform: translateX(0);
+}
+
+.nav-button {
+  position: absolute;
+  top: 2.22em;
+  right: 12px;
+  width: 1em;
+  height: 1em;
+  background-color: #fff;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.social-button {
+  text-align: right;
+}
+.social-button ul {
+  list-style: none;
+}
+.social-button li {
+  display: inline-block;
+}
+.social-button a {
+  padding: 0.67em 0 0.67em 0.67em;
+}
+
+.slides {
+  position: relative;
+  margin-bottom: 1.5em;
+  background-color: #05f;
+}
+.slides .slide-img {
+  max-height: 61.8vh;
+  object-fit: cover;
+  overflow: hidden;
+}
+.slides img {
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .slides .slide-caption {
+    font-size: 0.67em;
+    position: absolute;
+    right: -2.22em;
+    top: 2.22em;
+    writing-mode: vertical-lr;
+    z-index: 100;
+  }
+  .slides img {
+    mix-blend-mode: overlay;
+  }
+}
+
+.site-footer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.copyright-info {
+  font-size: 0.67em;
+  color: #666666;
+}
+
+.footer-deco {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-image: url("../res/img/logo.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 130%;
+  background-size: 300px;
+  opacity: 0.05;
+}
+
+.hidden {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,99 @@
+%logo {
+  width: 72px;
+  height: 64px;
+  margin-bottom: 0.67em;
+  background-image: url('../res/img/logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo-front {
+  @extend %logo;
+  @include mq(desktop) {
+    position: absolute;
+    top: 2.22em; left: -1em;
+    z-index: 100;
+  }
+}
+
+.logo-inner {
+  @extend %logo;
+  display: inline-block;
+  margin-top: 2.22em;
+}
+
+.page-header {
+  background-color: $color-brand;
+  height: 61.8vh;
+}
+
+.nav-front {
+  & li {
+    display: inline-block;
+  }
+  & a {
+    display: block;
+    padding: 0.44em 0.67em 0.44em 0;
+  }
+  @include mq(desktop) {
+    position: absolute;
+    top: 2.22em; right: 0;
+    z-index: 100;
+    & li {
+      display: block;
+    }
+    & a {
+      text-align: right;
+    }
+  }
+}
+
+.nav-inner {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 17.78em;
+  height: 100%;
+  background-color: $color-light;
+  z-index: 100;
+  transform: translateX(17.78em);
+  transition: transform 0.33s ease-out;
+  & ul {
+    list-style: none;
+    margin-left: 0;
+    padding-top: 2.22em;
+  }
+  & a {
+    display: block;
+    padding: 0.67em 0 0.67em 2.22em;
+  }
+}
+
+.nav-opened {
+  transform: translateX(0);
+}
+
+.nav-button {
+  position: absolute;
+  top: 2.22em; right: $padding;
+  width: 1em;
+  height: 1em;
+  background-color: $color-light;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.social-button {
+  text-align: right;
+  & ul {
+    list-style: none;
+  }
+  & li {
+    display: inline-block;
+  }
+  & a {
+    padding: 0.67em 0 0.67em 0.67em;
+  }
+}

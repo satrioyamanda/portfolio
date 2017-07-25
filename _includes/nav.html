@@ -1,0 +1,11 @@
+<nav class="{{ include.navtype }} ">
+  <ul>
+    <li><a href="{{site.baseurl}}/" {% if page.url == '/' %}class="current"{% endif %}>Home</a></li>
+    <li><a href="{{site.baseurl}}/about/" {% if page.url == '/about/' %}class="current"{% endif %}>About</a></li>
+    <li><a href="{{site.baseurl}}/works/" {% if page.url == '/works/' %}class="current"{% endif %}>Works</a></li>
+    <li><a href="{{site.baseurl}}/playground/" {% if page.url == '/playground/' %}class="current"{% endif %}>Playground</a></li>
+    <li><a href="{{site.baseurl}}/writings/" {% if page.url == '/writings/' %}class="current"{% endif %}>Writings</a></li>
+    <li><a href="{{site.baseurl}}/freebies/" {% if page.url == '/freebies/' %}class="current"{% endif %}>Freebies</a></li>
+    <li><a href="{{site.baseurl}}/contact/" {% if page.url == '/contact/' %}class="current"{% endif %}>Contact</a></li>
+  </ul>
+</nav>
