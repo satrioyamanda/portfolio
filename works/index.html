@@ -3,3 +3,21 @@ layout: inner
 title: Works
 ---
 
+<main class="page-main">
+  <ul class="line">
+    {% for work in site.pages %}
+      {% if work.post-type == 'work' %}
+      <li class="unit-full unit-half-t">
+        <div class="work-thumb">
+          <img src="{{work.thumbnail}}" alt="{{work.meta}}">
+        </div>
+        <h2 class="h3">{{work.title}}</h2>
+        <div class="work-info">
+          <h3 class="h4">{{work.category}}</h3>
+          <span>{{work.date}}</span>
+        </div>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</main>

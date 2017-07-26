@@ -1,0 +1,18 @@
+.page-main {
+  transform: translateY(-13.33em);
+}
+
+.profile-image {
+  max-height: 30em;
+  overflow: hidden;
+  object-fit: cover;
+  & img {
+    width: 100%;
+  }
+}
+
+.skill-icon {
+  width: 96px;
+  height: 96px;
+  background-color: lighten($color-dark,50%);
+}
