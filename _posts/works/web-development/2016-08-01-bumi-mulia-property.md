@@ -3,6 +3,6 @@ layout: inner
 title: Bumi Mulia Property
 posttype: work
 category: Web Development
-projectdate: May 2015
+projectdate: August 2016
 thumbnail: bmp-thumb.jpg
 ---

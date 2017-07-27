@@ -3,6 +3,6 @@ layout: inner
 title: Mulia Estate Agency
 posttype: work
 category: Web Development
-projectdate: May 2015
+projectdate: June 2016
 thumbnail: mea-thumb.jpg
 ---

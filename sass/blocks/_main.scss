@@ -6,6 +6,11 @@
   max-height: 30em;
   overflow: hidden;
   object-fit: cover;
+  @include mq(tablet) {
+    width: 38.2%;    
+    float: left;
+    margin-right: 1.5em;
+  }
   & img {
     width: 100%;
   }
@@ -15,4 +20,32 @@
   width: 96px;
   height: 96px;
   background-color: lighten($color-dark,50%);
+}
+
+.post-grid {
+  list-style: none;
+  & li {
+    margin-bottom: 1.5em;
+    @include mq(tablet) {
+      margin-bottom: 2.22em;
+    }
+  }
+  & h2 {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  & .work-thumb {
+    width: 100%;
+    object-fit: cover;
+    height: 20em;
+    background-color: lighten($color-dark, 50%);
+    @extend .has-border;
+    @extend .has-shadow;
+  }
+  & .work-info {
+    display: inline-block;
+    vertical-align: top;
+    color: lighten($color-dark, 50%);
+  }
 }
