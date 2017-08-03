@@ -24,7 +24,9 @@
 
 .page-header {
   background-color: $color-brand;
-  height: 61.8vh;
+  @include mq(tablet) {
+    height: 61.8vh;
+  }
 }
 
 .nav-front {

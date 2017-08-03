@@ -2,8 +2,6 @@ h1, h2, h3, h4,
 .h1, .h2, .h3, .h4 {
   font-family: $font-primary;
   line-height: 1.25;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
   @include mq(tablet) {
     line-height: $font-base-line;
   }
@@ -31,13 +29,42 @@ p {
 }
 
 a {
-  color: $color-dark;
+  color: black;
   text-decoration: none;
   &:hover {
+    color: $color-cta;
+  }
+  &:active {
+    color: darken($color-cta, 20%);
+  }
+  &:focus {
     color: $color-brand;
   }
 }
 
+dt {
+  display: block;
+  font-family: $font-primary;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+}
+
+dd {
+  display: block;
+  font-family: $font-secondary;
+  font-style: italic;
+  line-height: 1.25;
+  margin-bottom: 1.5em;
+}
+
 .has-underline {
   border-bottom: 0.22rem solid $color-brand;
+}
+
+.bigger {
+  font-size: 1.25em;
+}
+
+em, .em {
+  font-style: italic;
 }

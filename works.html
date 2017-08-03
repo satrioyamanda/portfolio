@@ -6,16 +6,16 @@ title: Works
 <main class="page-main container">
   <ul class="line post-grid">
     {% for work in site.posts %}
-      {% if work.posttype == 'work' %}
+      {% if work.category == 'work' %}
       <li class="unit-full unit-half-t">
-        <div class="work-thumb">
+        <div class="post-thumb">
           <a href="{{site.baseurl}}{{work.url}}">
             <img src="{{site.baseurl}}/res/img/works/{{work.thumbnail}}" alt="{{work.meta}}">
           </a>
         </div>
         <h2 class="h3"><a href="{{site.baseurl}}{{work.url}}">{{work.title}}</a></h2>
-        <div class="work-info">
-          <h3 class="h4">{{work.category}}</h3>
+        <div class="post-info">
+          <h3 class="h4">{{work.workcategory}}</h3>
           <span>{{work.projectdate}}</span>
         </div>
       </li>

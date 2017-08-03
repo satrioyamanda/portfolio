@@ -2,3 +2,49 @@
 layout: inner
 title: Writings
 ---
+
+<main class="page-main container">
+  <div class="line has-bottom-space">
+    <div class="unit-full unit-1of6-t">
+      <h2 class="h3">Pinned</h2>
+    </div>
+    <div class="unit-full unit-2of3-t">
+      {% for post in site.posts %}
+        {%if post.category == 'writing' and post.pinned %}
+          <img width="100%" class="has-border has-shadow" src="{{site.baseurl}}/res/img/writings/{{post.thumbnail}}" alt="{{post.meta}}">
+          <h3 class="h2"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+          <div class="post-info">
+            <h4>{{post.postcategory}}</h4>
+            <span>{{post.date}}</span>
+          </div>
+        {% endif %}
+      {% endfor %}  
+    </div>
+  </div>
+
+  <div class="line has-bottom-space">
+    <div class="unit-full unit-1of6-t">
+      <h2 class="h3">Recents</h2>
+    </div>
+    <div class="unit-full unit-2of3-t">
+      <ul class="post-list">
+        {% for writing in site.posts %}
+          {% if writing.category == 'writing' %}
+          <li>
+            <div class="post-thumb">
+              <a href="{{site.baseurl}}{{writing.url}}">
+                <img src="{{site.baseurl}}/res/img/writings/{{writing.thumbnail}}" alt="{{writing.meta}}">
+              </a>
+            </div>
+            <div class="post-info">
+              <h2 class="h3"><a href="{{site.baseurl}}{{writing.url}}">{{writing.title}}</a></h2>
+              <h3 class="h4">{{writing.postcategory}}</h3>
+              <span>{{writing.date}}</span>
+            </div>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</main>
