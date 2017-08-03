@@ -1,7 +1,7 @@
 ---
 layout: work
 title: Mulia Estate Agency
-category: work
+category: works
 workcategory: Web Design
 workrole: Collateral Design, Web Design & Development
 workurl: http://muliaestate.com

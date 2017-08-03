@@ -1,7 +1,7 @@
 ---
 layout: work
 title: Bumi Mulia Property
-category: work
+category: works
 workcategory: Web Development
 workrole: CMS Theme Development
 workurl: http://bumimuliaproperty.com

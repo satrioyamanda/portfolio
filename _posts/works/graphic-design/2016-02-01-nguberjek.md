@@ -1,7 +1,7 @@
 ---
 layout: work
 title: Nguberjek
-category: work
+category: works
 workcategory: Graphic Design
 workrole: Brochure Design & Web Design
 workurl: http://nguberjek.com

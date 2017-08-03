@@ -1,7 +1,7 @@
 ---
 layout: work
 title: Besoksenin
-category: work
+category: works
 workcategory: Web Development
 workrole: Logo Design, Web Design & CMS Theme Development
 workurl: http://besoksenin.co

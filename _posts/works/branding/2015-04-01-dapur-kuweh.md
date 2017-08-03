@@ -1,7 +1,7 @@
 ---
 layout: work
 title: Dapurkuweh
-category: work
+category: works
 workcategory: Brand Identity
 workrole: Logo Design & Type Design
 workurl: http://www.kreavi.com/portofolio/yamanda/Dapurkuweh-Logo-Design/56787

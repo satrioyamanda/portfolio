@@ -1,7 +1,7 @@
 ---
 layout: work
 title: Rumah Mulia Indonesia
-category: work
+category: works
 workcategory: Web Development
 workrole: Web Development
 workurl: http://rumahmulia.id
