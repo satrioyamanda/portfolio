@@ -10,7 +10,7 @@ projectdate: September 2016
 thumbnail: rmi.thumb.jpg
 ---
 
-![Rumah Mulia Indonesia]({{site.baseurl}}/res/img/works/rmi.png)
+![Rumah Mulia Indonesia]({{site.baseurl}}/res/img/works/RMI.png)
 
 ## Introduction
 
