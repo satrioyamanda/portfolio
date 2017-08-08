@@ -86,13 +86,17 @@
 .nav-button {
   position: fixed;
   top: 2.22em;
-  margin-left: 12%;
+  right: $padding;
   width: 1.5em;
   height: 1.5em;
   background-image: url('../res/img/nav-button.svg');
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 100;
+  @include mq(desktop) {
+    margin-left: 12%;
+    right: auto;
+  }
 }
 
 .current {
