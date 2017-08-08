@@ -84,13 +84,15 @@
 }
 
 .nav-button {
-  position: absolute;
-  top: 2.22em; right: $padding;
+  position: fixed;
+  top: 2.22em;
+  margin-left: 12%;
   width: 1.5em;
   height: 1.5em;
   background-image: url('../res/img/nav-button.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 100;
 }
 
 .current {

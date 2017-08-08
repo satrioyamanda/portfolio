@@ -1,12 +1,11 @@
 html {
   font-size: $font-base-size;
+  overflow-x: hidden;
 }
 
 body {
   font-family: $font-secondary;
   box-sizing: border-box;
-  transform: translateX(0);
-  transition: transform 0.35s ease-out;
 }
 
 *, *:before, *:after {

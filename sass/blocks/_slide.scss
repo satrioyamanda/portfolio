@@ -10,7 +10,7 @@
   & img {
     width: 100%;
   }
-  @include mq(desktop) {  
+  @include mq(desktop) {
     & .slide-caption {
       font-size: 0.67em;
       position: absolute;
@@ -18,9 +18,6 @@
       top: 2.22em;
       writing-mode: vertical-lr;
       z-index: 100;
-    }
-    & img {
-      mix-blend-mode: overlay;
     }
   }
 }
