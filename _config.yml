@@ -1,4 +1,3 @@
-markdown: redcarpet
-baseurl: /portfolio
+baseurl: /
 exclude: ['README.md', 'sass']
 permalink: pretty
